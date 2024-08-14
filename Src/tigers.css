@@ -10,7 +10,7 @@ html, body {
 body {
     font-family: Arial, sans-serif;
     display: flex;
-    background-color: antiquewhite;
+    background-color: white;
     flex-direction: column;
     overflow: hidden;
 }
