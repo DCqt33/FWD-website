@@ -1,0 +1,10 @@
+
+.nav-link
+{
+    color:white;
+}
+.navbar-brand.Logo
+{
+    transform: scale(2.25);
+    padding: 20px;
+}
