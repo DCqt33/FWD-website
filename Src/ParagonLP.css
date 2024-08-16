@@ -9,3 +9,16 @@
     transform: scale(1.5);
     padding-left: 20px;
 }
+/* Style for the section with a combined gradient and image background */
+/*.gradient-image-background {
+    height: 100vh; /* Full viewport height 
+    background: linear-gradient(
+        150deg,
+        rgba(242, 140, 40, 100), 
+        rgba(255, 172, 112, 100),
+        rgba(255,201,137,100),
+        rgba(255,155,53,100),
+        rgba(255,255,255,100)
+    )
+  
+}**/
