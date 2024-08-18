@@ -1,4 +1,3 @@
-
 .nav-link
 {
     padding-left: 20px;
@@ -22,3 +21,6 @@
     )
   
 }**/
+.carousel-fade .carousel-item {
+    transition: opacity 1.5s ease-in-out;
+  }
