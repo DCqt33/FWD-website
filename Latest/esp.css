@@ -1,0 +1,178 @@
+/*BODY*/
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fffdd0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+/*HEADER*/
+
+.header {
+    display: flex;
+    flex-direction: column;
+}
+
+/*------------------------------------------------------------------------------*/
+
+/*MAIN*/
+main {
+    flex-grow: 1; 
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+section{
+    margin-bottom: 150px;
+}
+
+
+/*FIRST SECTION*/
+/*.first{
+    height: 600px;
+    width: 100%;
+    background-image: url('images/Cimg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.first{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    width: 100%;
+    background-color: #830C4F; 
+    background-size: cover;
+    background-position: center;
+}
+
+.first img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+*/
+
+.first {
+    position: relative;
+    height: 700px; 
+    background-image: url('images/esp.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+
+
+/*SECOND SECTION*/
+.second {
+    height: 600px;
+    width: 100%;
+    background-color: #fffdd0;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    text-align: center;
+    margin-top: -150px;
+}
+
+.second h1 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 44px;
+    color: black;
+    text-align: center;
+    padding-bottom: 20px; 
+    border-bottom: 2px solid #830C4F; 
+    width: 950px;
+    display: inline-block; 
+}
+
+.second h1 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 44px;
+    color: black;
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #830C4F;
+    width: 1250px;
+}
+
+.second p {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 24px;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/*------------------------------------------------------------------------------*/
+
+/*FOOTER*/
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    width: 100%;
+    flex-shrink: 0; 
+}
+
+/*------------------------------------------------------------------------------*/
+
+/*BUTTONS*/
+
+/*NAV BUTTON*/
+.navbar {
+    background-color: black;
+}
+
+.navbar-nav{
+    margin-left: 80px; 
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    padding: 10px 15px; 
+    margin-right: 35px;
+    font-size: 16px; 
+    text-transform: uppercase; 
+    text-decoration: none;
+    border: none; 
+    outline: none; 
+    box-shadow: none; 
+}
+
+.navbar-nav .nav-link:hover, .navbar-nav .nav-link:focus, .navbar-nav .nav-link:active {
+    background-color: transparent; 
+    color: #830C4F; 
+    border: none; 
+    box-shadow: none;
+}
+
+.navbar-toggler {
+    border: none; 
+}
