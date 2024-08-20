@@ -403,10 +403,16 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    background-color: #F28C28;
     color: white;
     padding: 5px;
     text-align: center;
     width: 100%;
+    border-radius: 30px 30px 0 0;
     flex-shrink: 0; 
 }
+.FOOT .logo1 img {
+    width: 200px; /* Set the desired width */
+    height: auto; /* This will maintain the aspect ratio */
+  }
+  
