@@ -1,0 +1,379 @@
+/*BODY*/
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+/*HEADER*/
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+/*NAVBAR*/
+.navbar {
+    background-color: #353839;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .8);
+    height: 50px;
+    z-index: 2;
+}
+
+.navbar-nav{
+    margin-left: 80px; 
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    padding: 10px 15px; 
+    margin-right: 35px;
+    font-size: 16px; 
+    font-weight: bold;
+    text-transform: uppercase; 
+    text-decoration: none;
+}
+
+.navbar-nav .nav-link:hover, .navbar-nav .nav-link:focus, .navbar-nav .nav-link:active {
+    background-color: transparent; 
+    color: #ff6f0e; 
+    border: none; 
+    box-shadow: none;
+}
+
+.navbar-toggler {
+    border: none; 
+}
+
+/*------------------------------------------------------------------------------*/
+
+/*MAIN*/
+main {
+    flex-grow: 1; 
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+section{
+    margin-bottom: 150px;
+}
+
+
+/*FIRST SECTION*/
+.first{
+    height: 800px;
+    width:100%;
+    position: relative;
+    overflow: hidden;
+    background:
+     linear-gradient(105deg,
+        rgba(242, 140, 40, 1), 
+        rgba(255, 172, 112, 1),
+        rgba(255,201,137,1),
+        rgba(255,155,53,.97),
+        rgba(255,255,255,.1) 50%, 
+        rgba(255,255,255,.2)
+    ),
+    url('images/TEbg.png') no-repeat right center;
+    background-size: cover, 75% 100%;
+    background-position: center center, right center;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+.first::after {
+    content: ""; /* Necessary to display the pseudo-element */
+    position: absolute; /* Position it relative to the .first element */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: radial-gradient(
+        circle at left center, 
+        rgba(255, 255, 255, 0) 20%, 
+        rgba(255, 111, 14, 0) 95%,
+        rgba(255,155,53,1), 
+        rgba(255, 111, 14, 0.8) 98% 
+    ),
+    radial-gradient(
+        circle at top center, 
+        rgba(255, 255, 255, 0) 0%, 
+        rgba(255, 111, 14, 0) 75%,
+        rgba(255,155,53,1),
+        rgba(255, 111, 14, 0.8) 98%
+       
+    );
+    pointer-events: none; 
+}
+
+.first img{
+    position: absolute;
+    display: flex;
+    height: 30%;
+    left:90px;
+    top: 140px;
+}
+
+/*SECOND SECTION*/
+.second {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 1600px;
+    width: 100%;
+    top: -7.7%; 
+    background-color: #ffffff;
+    border-radius: 40px; 
+    z-index: 1;
+    overflow: hidden; 
+}
+
+.intro{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    margin:0;
+    margin-top: -10%;
+    gap: 50px;
+    z-index: 1;
+}
+
+.intro::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1650px; 
+    height: 1650px; 
+    background: radial-gradient(
+        circle, 
+        rgba(255, 158, 12, 0.1) 25%, 
+        rgba(255, 158, 12, 0.1) 15%, 
+        rgba(255, 158, 12, 0) 50%  
+    );
+    border-radius: 50%;
+    transform: translate(-95%, -60%); 
+    z-index: -1;
+    pointer-events: none; 
+}
+
+.intro::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1650px; 
+    height: 1650px; 
+    background: radial-gradient(
+        circle, 
+        rgba(255, 158, 12, 0.1) 25%, 
+        rgba(255, 158, 12, 0.1) 15%, 
+        rgba(255, 158, 12, 0) 50%  
+    );
+    border-radius: 50%;
+    transform: translate(-25%, -35%); 
+    z-index: -1;
+    pointer-events: none; 
+}
+
+.intro img{
+    position: relative;
+    border-radius: 5%;
+}
+
+.introtxt{
+    position: relative;
+    width: 650px;
+    margin-top: 10%;
+    overflow: hidden;
+}
+
+.introtxt h1{
+    text-transform: capitalize;
+    font-size: 56px;
+    font-weight: bold;
+    margin-bottom: 5%;
+}
+
+.introtxt p{
+    font-size: 20px;
+    word-spacing: 10px;
+    color: #666666;
+}
+
+.connect {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 1375px;
+    height: 450px;
+    background-color: #FCEED5;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    z-index: 1;
+}
+
+.connect h1, .connect p {
+    position: relative;
+    margin-left:10%;
+    text-transform: capitalize;
+    font-weight: bold;
+    z-index: 3;
+}
+
+.connect h1{
+    margin-top: 5%;
+    font-weight: 800;
+    font-size: 44px;
+}
+
+.connect p{
+    font-size: 32px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 105px; 
+    margin-top: 40px; 
+    margin-left: 10%;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 32px; 
+    height: 32px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1); /* Slightly enlarge icon on hover */
+    opacity: 0.8; /* Slightly reduce opacity on hover */
+}
+
+.social-icons img {
+    width: 100%;
+    height: 100%;
+}
+
+/*------------------------------------------------------------------------------*/
+
+/*FOOTER*/
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    width: 100%;
+    flex-shrink: 0; 
+}
+
+/*------------------------------------------------------------------------------*/
+
+/*BUTTONS*/
+/*FIRST SECTION BUTTON*/
+
+.fbtns{
+    position: relative;
+    display: flex;
+}
+
+.ESPbutton {
+    display: inline-block; 
+    position: relative;
+    margin-top: 210px;
+    margin-left: 95px;
+}
+
+.ESPbutton a {
+    background-color: transparent;
+    color: #1B1B1B;
+    padding: 15px 35px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: capitalize;
+    border-radius: 45px;
+    border: 2px solid rgba(27, 27, 27, 1);
+    margin: 0 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.ESPbutton a:hover {
+    background-color: transparent;
+    color: #ff6f0e;
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    border-color: rgba(27, 27, 27, 1);
+}
+
+
+.TEbutton {
+    display: inline-block; 
+    position: relative;
+    margin-top: 210px;
+    margin-left: -15px;
+}
+
+.TEbutton a {
+    background-color: #1B1B1B;
+    color: white;
+    padding: 15px 55px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 45px;
+    border: none;
+    text-transform: capitalize;
+    border: 2px solid rgba(27, 27, 27, 1);
+    margin: 0 20px;
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
+}
+
+.TEbutton a:hover {
+    background-color: #1B1B1B;
+    color: #ff6f0e;
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.TEbutton a.active {
+    background-color: #1B1B1B; 
+    color: white;
+    border: 1px solid #1B1B1B; 
+    cursor: default; 
+    pointer-events: none; 
+}
+
+
+.TEbutton a.active:hover {
+    background-color: #1B1B1B; 
+    color: #ff6f0e;
+    transform: none; 
+    box-shadow: none; 
+}
+
